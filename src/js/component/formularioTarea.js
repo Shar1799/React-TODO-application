@@ -43,4 +43,8 @@ const FormularioTarea = props => {
 	);
 };
 
+FormularioTarea.propTypes = {
+	tareaNueva: PropTypes.func
+};
+
 export default FormularioTarea;

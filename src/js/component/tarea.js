@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { useState } from "react";
 
 //Función para tareas
 const Tareas = props => {
@@ -19,6 +18,13 @@ const Tareas = props => {
 			</span>
 		</div>
 	);
+};
+
+//Validación de los props
+Tareas.propTypes = {
+	id: PropTypes.number,
+	tarea: PropTypes.string,
+	eliminarTarea: PropTypes.func
 };
 
 export default Tareas;

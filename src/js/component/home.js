@@ -21,12 +21,18 @@ export function Home() {
 		setListaDeTareas(lista);
 	};
 
+	<Tareas value=""></Tareas>;
 	//Retorna
 	return (
 		<div className="container">
 			<FormularioTarea tareaNueva={tareaNueva} />
 			{listaDeTareas.map((e, index) => (
-				<Tareas tarea={e} eliminarTarea={eliminarTarea} id={index} />
+				<Tareas
+					key={(e, index)}
+					tarea={e}
+					eliminarTarea={eliminarTarea}
+					id={index}
+				/>
 			))}
 		</div>
 	);
